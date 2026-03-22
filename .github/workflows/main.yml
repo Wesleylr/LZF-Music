@@ -26,6 +26,7 @@ jobs:
       - name: Install Tools
         run: |
           dart pub global activate fastforge
+          echo "$HOME/.pub-cache/bin" >> "$GITHUB_PATH"
           npm install -g appdmg
 
       - name: Get Flutter version
@@ -149,7 +150,9 @@ jobs:
           if (Test-Path $sourceFile) { Copy-Item $sourceFile $targetFile -Force }
 
       - name: Install fastforge
-        run: dart pub global activate fastforge
+        run: |
+          dart pub global activate fastforge
+          echo "$HOME/.pub-cache/bin" >> "$GITHUB_PATH"
 
       - name: Get Flutter version
         id: get_version
@@ -267,7 +270,9 @@ jobs:
         run: flutter --version
 
       - name: Install fastforge
-        run: dart pub global activate fastforge
+        run: |
+          dart pub global activate fastforge
+          echo "$HOME/.pub-cache/bin" >> "$GITHUB_PATH"
 
       - name: Get Flutter version
         id: get_version
