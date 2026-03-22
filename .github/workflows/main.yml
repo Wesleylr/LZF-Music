@@ -249,7 +249,7 @@ jobs:
       - name: Install Linux build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev rpm patchelf locate
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev rpm patchelf locate libayatana-appindicator3-dev
 
       - name: Set up Flutter manually for Linux ARM64
         if: matrix.arch == 'arm64'
