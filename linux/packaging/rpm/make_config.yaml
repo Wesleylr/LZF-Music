@@ -14,6 +14,7 @@ keywords:
   - Player
 
 generic_name: Music Player
+metainfo: linux/packaging/linx_music.appdata.xml
 
 categories:
   - AudioVideo

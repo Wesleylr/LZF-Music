@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>cn.geddy.linx_music</id>
+  <name>Linx Music</name>
+  <summary>Elegant Flutter music player</summary>
+  <metadata_license>MIT</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <developer_name>GerryDush</developer_name>
+  <launchable type="desktop-id">linx-music.desktop</launchable>
+  <description>
+    <p>
+      Linx Music is a Flutter-based music player for local and private cloud music libraries.
+    </p>
+  </description>
+  <categories>
+    <category>AudioVideo</category>
+    <category>Audio</category>
+    <category>Player</category>
+  </categories>
+</component>

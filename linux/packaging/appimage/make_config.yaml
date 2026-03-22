@@ -13,5 +13,6 @@ categories:
   - Player
 
 startup_notify: true
+metainfo: linux/packaging/linx_music.appdata.xml
 
 include: []
