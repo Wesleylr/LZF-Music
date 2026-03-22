@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lzf_music/services/audio_player_service.dart';
 import 'package:lzf_music/services/http_service.dart';
+import 'package:lzf_music/utils/theme_utils.dart';
 import 'package:provider/provider.dart';
 import 'package:media_kit/media_kit.dart';
 
@@ -142,7 +143,7 @@ class _MainAppState extends State<MainApp> with DesktopWindowMixin {
             supportedLocales: _localization.supportedLocales,
             localizationsDelegates: _localization.localizationsDelegates,
             color: PlatformUtils.isLinux
-                ? ThemeUtils.darkBg
+                ? ThemeUtils.lightBg
                 : Colors.transparent,
             title: 'Linx Music',
             theme: themeProvider.buildLightTheme(),
